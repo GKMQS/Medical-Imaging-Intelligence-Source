@@ -38,6 +38,9 @@ ollama pull llava:7b
 ## ⚙️Run the main program:
 python main.py
 
+---
+
+
 📁 项目文件说明
 
 本项目整体结构清晰，按功能与模块划分，便于部署、维护与二次开发。各主要文件及目录说明如下：
