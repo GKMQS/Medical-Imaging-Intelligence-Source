@@ -1,0 +1,101 @@
+*{
+    font-family: 微软雅黑;
+    color: #000000;
+    background-color: #F5F5F5;
+}
+
+/* 设置目录树样式 */
+QTreeView{
+    show-decoration-selected: 1;
+}
+QTreeView::item{
+    height: 30px;
+}
+QTreeView::item:hover, QTreeView::branch:hover{
+    background: #7FB3D5;
+}
+QTreeView::item:selected, QTreeView::branch:selected{
+    background: #5DADE2;
+}
+QTreeView::branch{
+    color: #BBBBBB;
+}
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+    border-image: none;
+    image: url(icons/branch-close.png);
+}
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+    border-image: none;
+    image: url(icons/branch-open.png);
+}
+
+/* 设置标签样式 */
+QLabel{
+    font-size: 18px;
+    border: 1px solid #BBBBBB;
+    border-width: 1px 1px 0px 1px;
+}
+
+/* 设置视图样式 */
+QGraphicsView{
+    border: 1px solid #BBBBBB;
+    background-color: #FBFCFC;
+}
+
+/* 设置列表样式 */
+QListWidget::Item{
+    border: 1px solid #BBBBBB;
+    font-size: 20px;
+    background: #E1F5FE;
+    color: #000000;
+}
+
+QListWidget::Item:hover{
+    background: #E8EAF6;
+}
+
+FuncListWidget::Item{
+    border-style: inset;
+    border-radius: 8px;
+    border: 1px solid #999999;
+    margin:0px 1px 0px 0px
+}
+
+UsedListWidget::Item{
+    border: 2px solid #999999;
+    margin:0px 0px 1px 0px
+}
+
+UsedListWidget::Item:selected{
+    background: #99CCFF;
+}
+
+
+/* 设置表格样式 */
+QTableWidget{
+    alternate-background-color: #D6EAF8;
+}
+
+
+QToolButton:hover{
+    background: #4B6EAF;
+}
+
+QToolBar#mainToolBar {
+    background: #FFFFFF;
+    border-bottom: 1px solid #D0D7E2;
+    spacing: 8px;
+    padding: 6px;
+}
+QToolBar#mainToolBar QToolButton {
+    border-radius: 6px;
+    padding: 6px;
+}
+QToolBar#mainToolBar QToolButton:hover {
+    background: #EAF2FF;
+}
+QToolBar#mainToolBar QToolButton:pressed {
+    background: #D6E4FF;
+}
